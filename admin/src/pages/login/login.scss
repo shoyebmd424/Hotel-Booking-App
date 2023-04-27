@@ -1,0 +1,28 @@
+.login{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+ }
+ .lcontainer{
+     margin: auto;
+     border: 1px solid black;
+     padding: 1rem;
+     border-radius: 1rem;
+   
+ }
+ .lcontainer>div>input,.lcontainer>div>button {
+     padding: 0.7rem 2rem;
+     margin-bottom: 0.5rem;
+     border: none;
+ 
+ }
+ .lcontainer>div>button{
+  background-color: rgb(73, 73, 244)
+  ;
+  color: white;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+ }.lcontainer>div{
+    
+ display: flex;
+ }

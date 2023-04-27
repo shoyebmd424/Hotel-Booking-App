@@ -1,0 +1,275 @@
+root@vps1:~# root@vps1:~# apt-get update
+
+     sudo apt-get update && sudo apt-get install yarn
+
+
+root@vps1:~# apt-get install nodejs
+
+
+root@vps1:~# systemctl stop apache2
+root@vps1:~# systemctl disable apache2
+
+root@vps1:~# apt update
+
+root@vps1:~# nginx start
+
+root@vps1:~# adduser araqsa
+
+root@vps1:~# ^C
+root@vps1:~# ^C
+root@vps1:~# adduser araqsa
+adduser: The user `araqsa' already exists.
+root@vps1:~# deluser araqsa
+root@vps1:~# adduser araqsa
+Adding user `araqsa' ...
+Adding new group `araqsa' (1000) ...
+Adding new user `araqsa' (1000) with group `araqsa' ...
+The home directory `/home/araqsa' already exists.  Not copying from `/etc/skel'.
+New password:
+BAD PASSWORD: The password is shorter than 12 characters
+New password:
+Retype new password:
+Sorry, passwords do not match.
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for araqsa
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+root@vps1:~# su - araqsa
+araqsa@vps1:~$ exit
+logout
+root@vps1:~# sudo usermod -aG sudo araqsa
+root@vps1:~# su - araqsa
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+araqsa@vps1:~$ cd /var/www/
+araqsa@vps1:/var/www$ sudo mkdir mywebsite
+[sudo] password for araqsa:
+Sorry, try again.
+[sudo] password for araqsa:
+araqsa@vps1:/var/www$ ls
+html  mywebsite
+araqsa@vps1:/var/www$ cd mywebsite
+araqsa@vps1:/var/www/mywebsite$ sudo curl -o actions-runner-linux-x64-2.301.1.tar.gz -L https://github.com/actions/runner/releases/download/v2.301.1/actions-runner-linux-x64-2.301.1.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  137M  100  137M    0     0  95398      0  0:25:10  0:25:10 --:--:--  200k
+araqsa@vps1:/var/www/mywebsite$ ls
+actions-runner-linux-x64-2.301.1.tar.gz
+araqsa@vps1:/var/www/mywebsite$ sudo echo "3ee9c3b83de642f919912e0594ee2601835518827da785d034c1163f8efdf907  actions-runner-linux-x64-2.301.1.tar.gz" | shasum -a 256 -c
+[sudo] password for araqsa:
+actions-runner-linux-x64-2.301.1.tar.gz: OK
+araqsa@vps1:/var/www/mywebsite$ ls
+actions-runner-linux-x64-2.301.1.tar.gz
+araqsa@vps1:/var/www/mywebsite$ sudo echo "3ee9c3b83de642f919912e0594ee2601835518827da785d034c1163f8efdf907  actions-runner-linux-x64-2.301.1.tar.gz" | shasum -a 256 -c
+actions-runner-linux-x64-2.301.1.tar.gz: OK
+araqsa@vps1:/var/www/mywebsite$ ls
+actions-runner-linux-x64-2.301.1.tar.gz
+araqsa@vps1:/var/www/mywebsite$ client_loop: send disconnect: Connection reset
+PS C:\Users\Acer> ssh araqsa@194.163.40.84                                                       araqsa@194.163.40.84's password:
+Permission denied, please try again.
+araqsa@194.163.40.84's password:
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.2.0 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Mon Feb 13 15:37:27 2023 from 157.35.44.230
+araqsa@vps1:~$ ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+-bash: ./config.sh: No such file or directory
+araqsa@vps1:~$ sudo chmod -R 777 /var/www/mywebsite
+[sudo] password for araqsa:
+araqsa@vps1:~$ ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+-bash: ./config.sh: No such file or directory
+araqsa@vps1:~$ ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+-bash: ./config.sh: No such file or directory
+araqsa@vps1:~$ sudo ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+sudo: ./config.sh: command not found
+araqsa@vps1:~$ sudo echo "3ee9c3b83de642f919912e0594ee2601835518827da785d034c1163f8efdf907  actions-runner-linux-x64-2.301.1.tar.gz" | shasum -a 256 -c
+shasum: actions-runner-linux-x64-2.301.1.tar.gz: No such file or directory
+actions-runner-linux-x64-2.301.1.tar.gz: FAILED open or read
+shasum: WARNING: 1 listed file could not be read
+araqsa@vps1:~$ cd /var/www/
+araqsa@vps1:/var/www$ cd mywebsite
+araqsa@vps1:/var/www/mywebsite$ ls
+actions-runner-linux-x64-2.301.1.tar.gz
+araqsa@vps1:/var/www/mywebsite$ sudo echo "3ee9c3b83de642f919912e0594ee2601835518827da785d034c1163f8efdf907  actions-runner-linux-x64-2.301.1.tar.gz" | shasum -a 256 -c
+actions-runner-linux-x64-2.301.1.tar.gz: OK
+araqsa@vps1:/var/www/mywebsite$ tar xzf ./actions-runner-linux-x64-2.301.1.tar.gz
+tar: .: Cannot utime: Operation not permitted
+tar: .: Cannot change mode to rwxr-xr-x: Operation not permitted
+tar: Exiting with failure status due to previous errors
+araqsa@vps1:/var/www/mywebsite$ sudo tar xzf ./actions-runner-linux-x64-2.301.1.tar.gz
+araqsa@vps1:/var/www/mywebsite$ ls
+actions-runner-linux-x64-2.301.1.tar.gz  env.sh                   run-helper.sh.template
+bin                                      externals                run.sh
+config.sh                                run-helper.cmd.template  safe_sleep.sh
+araqsa@vps1:/var/www/mywebsite$ ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+touch: cannot touch '.env': Permission denied
+./env.sh: line 37: .path: Permission denied
+Unhandled exception. System.UnauthorizedAccessException: Access to the path '/var/www/mywebsite/_diag' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at System.IO.FileSystem.CreateDirectory(String fullPath)
+   at System.IO.Directory.CreateDirectory(String path)
+   at GitHub.Runner.Common.HostTraceListener..ctor(String logFileDirectory, String logFilePrefix, Int32 pageSizeLimit, Int32 retentionDays)
+   at GitHub.Runner.Common.HostContext..ctor(String hostType, String logFile)
+   at GitHub.Runner.Listener.Program.Main(String[] args)
+./config.sh: line 81:  4783 Aborted                 ./bin/Runner.Listener configure "$@"
+araqsa@vps1:/var/www/mywebsite$ sudo chmod -R 777 /var/www/website
+chmod: cannot access '/var/www/website': No such file or directory
+araqsa@vps1:/var/www/mywebsite$ sudo chmod -R 777 /var/www/mywebsite
+araqsa@vps1:/var/www/mywebsite$ ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+
+--------------------------------------------------------------------------------
+|        ____ _ _   _   _       _          _        _   _                      |
+|       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+|      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+|      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+|       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+|                                                                              |
+|                       Self-hosted runner registration                        |
+|                                                                              |
+--------------------------------------------------------------------------------
+
+# Authentication
+
+
+√ Connected to GitHub
+
+# Runner Registration
+
+Enter the name of the runner group to add this runner to: [press Enter for Default] araqsa
+
+Could not find any self-hosted runner group named "araqsa".
+araqsa@vps1:/var/www/mywebsite$ ./config.sh --url https://github.com/Araqsa123/Araqsa-App --token A5MKYFFNY3NAXJ5SHTR6LNTD5JU2I
+
+--------------------------------------------------------------------------------
+|        ____ _ _   _   _       _          _        _   _                      |
+|       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+|      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+|      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+|       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+|                                                                              |
+|                       Self-hosted runner registration                        |
+|                                                                              |
+--------------------------------------------------------------------------------
+
+# Authentication
+
+
+√ Connected to GitHub
+
+# Runner Registration
+
+Enter the name of the runner group to add this runner to: [press Enter for Default]
+
+Enter the name of runner: [press Enter for vps1]
+
+This runner will have the following labels: 'self-hosted', 'Linux', 'X64'
+Enter any additional labels (ex. label-1,label-2): [press Enter to skip]
+
+√ Runner successfully added
+√ Runner connection is good
+
+# Runner settings
+
+Enter name of work folder: [press Enter for _work]
+
+√ Settings Saved.
+
+araqsa@vps1:/var/www/mywebsite$ ls
+_diag                                    config.sh  run-helper.cmd.template  safe_sleep.sh
+actions-runner-linux-x64-2.301.1.tar.gz  env.sh     run-helper.sh.template   svc.sh
+bin                                      externals  run.sh
+araqsa@vps1:/var/www/mywebsite$ sudo ./svc.sh install
+Creating launch runner in /etc/systemd/system/actions.runner.Araqsa123-Araqsa-App.vps1.service
+Run as user: araqsa
+Run as uid: 1000
+gid: 1000
+Created symlink /etc/systemd/system/multi-user.target.wants/actions.runner.Araqsa123-Araqsa-App.vps1.service → /etc/systemd/system/actions.runner.Araqsa123-Araqsa-App.vps1.service.
+araqsa@vps1:/var/www/mywebsite$ sudo ./svc.sh start
+
+/etc/systemd/system/actions.runner.Araqsa123-Araqsa-App.vps1.service
+● actions.runner.Araqsa123-Araqsa-App.vps1.service - GitHub Actions Runner (Araqsa123-Araqsa-App.vps1)
+     Loaded: loaded (/etc/systemd/system/actions.runner.Araqsa123-Araqsa-App.vps1.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2023-02-13 16:47:25 UTC; 11ms ago
+   Main PID: 4974 ((unsvc.sh))
+     CGroup: /system.slice/actions.runner.Araqsa123-Araqsa-App.vps1.service
+             └─4974 "(unsvc.sh)"
+
+Feb 13 16:47:25 vps1.aqsa systemd[1]: Started GitHub Actions Runner (Araqsa123-Araqsa-App.vps1).
+Hint: Some lines were ellipsized, use -l to show in full.
+araqsa@vps1:/var/www/mywebsite$ cd /etc/nginx/sites-available/
+araqsa@vps1:/etc/nginx/sites-available$ ls
+default
+araqsa@vps1:/etc/nginx/sites-available$ sudo nano default
+araqsa@vps1:/etc/nginx/sites-available$ sudo service restart nginx
+[sudo] password for araqsa:
+restart: unrecognized service
+araqsa@vps1:/etc/nginx/sites-available$ sudo service nginx restart
+araqsa@vps1:/etc/nginx/sites-available$ sudo visudo -f /etc/sudoers.d/araqsa
+/etc/sudoers.d/araqsa:1:117: syntax error
+araqsa ALL=(All) NOPASSWD /usr/sbin/service nginx start./usr/sbin/service nginx stop./usr/sbin/service nginx restart
+                                                                                                                    ^
+What now?
+Options are:
+  (e)dit sudoers file again
+  e(x)it without saving changes to sudoers file
+  (Q)uit and save changes to sudoers file (DANGER!)
+
+What now? e
+/etc/sudoers.d/araqsa:1:56: syntax error
+araqsa ALL=(All) NOPASSWD /usr/sbin/service nginx start,/usr/sbin/service nginx stop,/usr/sbin/service nginx restart
+                                                       ^
+What now? client_loop: send disconnect: Connection reset
+PS C:\Users\Acer> ssh araqsa@194.163.40.84
+araqsa@194.163.40.84's password:
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.2.0 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Mon Feb 13 16:29:10 2023 from 157.35.44.230
+araqsa@vps1:~$ cd /etc/nginx/sites-available
+araqsa@vps1:/etc/nginx/sites-available$  sudo visudo -f /etc/sudoers.d/araqsa
+[sudo] password for araqsa:
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$  sudo visudo -f /etc/sudoers.d/araqsa
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$  sudo visudo -f /etc/sudoers.d/araqsa
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$  sudo visudo -f /etc/sudoers.d/araqsa
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$ sudo visudo -f /etc/sudoers.d/araqsa
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$ sudo lsof /etc/sudoers
+COMMAND  PID USER   FD   TYPE     DEVICE SIZE/OFF   NODE NAME
+sudo    5071 root    5r   REG 182,536065     1671 131725 /etc/sudoers
+sudo    5072 root    5r   REG 182,536065     1671 131725 /etc/sudoers
+sudo    5136 root    5r   REG 182,536065     1671 131725 /etc/sudoers
+sudo    5137 root    5r   REG 182,536065     1671 131725 /etc/sudoers
+araqsa@vps1:/etc/nginx/sites-available$ visudo 9348 root 5uW REG 8,1 755 9699545 /etc/sudoers
+usage: visudo [-chqsV] [[-f] sudoers ]
+araqsa@vps1:/etc/nginx/sites-available$ sudo -i
+root@vps1:~# kill -15 9348
+-bash: kill: (9348) - No such process
+root@vps1:~# ps --no-heading 9348 || kill -9 9348
+-bash: kill: (9348) - No such process
+root@vps1:~# su - araqsa
+araqsa@vps1:~$ cd /etc/nginx/sites-available
+araqsa@vps1:/etc/nginx/sites-available$  sudo visudo -f /etc/sudoers.d/araqsa
+[sudo] password for araqsa:
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$ sudo visudo -f /etc/sudoers.d/araqsa
+visudo: /etc/sudoers.d/araqsa busy, try again later
+araqsa@vps1:/etc/nginx/sites-available$
+
